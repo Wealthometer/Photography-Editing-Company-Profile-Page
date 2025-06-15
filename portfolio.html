@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | LENS MASTER</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/navbar.css">
+</head>
+<body class="portfolio-page">
+    <div class="noise-overlay"></div>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    
+    <div class="loading-screen">
+        <div class="loader">
+            <div class="camera-icon">
+                <i class="fas fa-camera"></i>
+            </div>
+            <span class="loader-text">PORTFOLIO</span>
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <nav class="main-nav">
+        <div class="logo">
+            <a href="index.html">LENS<span>MASTER</span></a>
+        </div>
+        <div class="menu-toggle">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="nav-overlay">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-footer">
+                <div class="nav-social">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-flickr"></i></a>
+                    <a href="#"><i class="fab fa-behance"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <div class="header-content">
+                <h1 class="page-title">
+                    <span class="title-line">MY</span>
+                    <span class="title-line">PORTFOLIO</span>
+                </h1>
+                <p class="page-subtitle">A collection of my finest work</p>
+            </div>
+        </section>
+
+        <section class="portfolio-filters-section">
+            <div class="container">
+                <div class="filter-controls">
+                    <button class="filter-btn active" data-filter="all">All Work</button>
+                    <button class="filter-btn" data-filter="portrait">Portrait</button>
+                    <button class="filter-btn" data-filter="wedding">Wedding</button>
+                    <button class="filter-btn" data-filter="commercial">Commercial</button>
+                    <button class="filter-btn" data-filter="landscape">Landscape</button>
+                    <button class="filter-btn" data-filter="street">Street</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio-gallery">
+            <div class="container">
+                <div class="gallery-grid" id="galleryGrid">
+                    <!-- Portrait Photography -->
+                    <div class="gallery-item" data-category="portrait">
+                        <div class="gallery-image">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ69pGtRYgF6wfRznFqzUflQ79Tkvgy0QMtTw&s" alt="Corporate Portrait">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Corporate Portrait</h3>
+                                    <p>Professional Headshots</p>
+                                    <div class="gallery-meta">
+                                        <span><i class="fas fa-camera"></i> Canon 5D Mark IV</span>
+                                        <span><i class="fas fa-eye"></i> f/2.8</span>
+                                        <span><i class="fas fa-clock"></i> 1/125s</span>
+                                    </div>
+                                </div>
+                                <div class="gallery-actions">
+                                    <button class="action-btn view-btn" data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ69pGtRYgF6wfRznFqzUflQ79Tkvgy0QMtTw&s">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                    <button class="action-btn like-btn">
+                                        <i class="fas fa-heart"></i>
+                                    </button>
+                                    <button class="action-btn share-btn">
+                                        <i class="fas fa-share"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item large" data-category="wedding">
+                        <div class="gallery-image">
+                            <img src="https://wpmedia.bridebook.com/wp-content/uploads/2023/11/28b97e72-cfbe-4037-af2d-4cefde5172e6.jpg" alt="Wedding Ceremony">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Wedding Ceremony</h3>
+                                    <p>Sarah & Michael's Special Day</p>
+                                    <div class="gallery-meta">
+                                        <span><i class="fas fa-camera"></i> Nikon D850</span>
+                                        <span><i class="fas fa-eye"></i> f/4</span>
+                                        <span><i class="fas fa-clock"></i> 1/250s</span>
+                                    </div>
+                                </div>
+                                <div class="gallery-actions">
+                                    <button class="action-btn view-btn" data-image="https://wpmedia.bridebook.com/wp-content/uploads/2023/11/28b97e72-cfbe-4037-af2d-4cefde5172e6.jpg">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                    <button class="action-btn like-btn">
+                                        <i class="fas fa-heart"></i>
+                                    </button>
+                                    <button class="action-btn share-btn">
+                                        <i class="fas fa-share"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="commercial">
+                        <div class="gallery-image">
+                            <img src="https://cdn-bjpdk.nitrocdn.com/dyjDRTumiVVFLKEpXMADzKdEUUbypNrL/assets/images/optimized/rev-c641c5a/visualeducation.com/wp-content/uploads/2019/07/Clinique_Advert_Karl_Taylor.jpg" alt="Product Photography">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Product Photography</h3>
+                                    <p>Fashion Brand Campaign</p>
+                                    <div class="gallery-meta">
+                                        <span><i class="fas fa-camera"></i> Sony A7R IV</span>
+                                        <span><i class="fas fa-eye"></i> f/8</span>
+                                        <span><i class="fas fa-clock"></i> 1/60s</span>
+                                    </div>
+                                </div>
+                                <div class="gallery-actions">
+                                    <button class="action-btn view-btn" data-image="https://cdn-bjpdk.nitrocdn.com/dyjDRTumiVVFLKEpXMADzKdEUUbypNrL/assets/images/optimized/rev-c641c5a/visualeducation.com/wp-content/uploads/2019/07/Clinique_Advert_Karl_Taylor.jpg">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                    <button class="action-btn like-btn">
+                                        <i class="fas fa-heart"></i>
+                                    </button>
+                                    <button class="action-btn share-btn">
+                                        <i class="fas fa-share"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="landscape">
+                        <div class="gallery-image">
+                            <img src="https://images.unsplash.com/photo-1506880648420-aafaa650d147?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW91bnRhaW4lMjBzdW5yaXNlfGVufDB8fDB8fHww" alt="Mountain Landscape">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Mountain Sunrise</h3>
+                                    <p>Nature Photography Series</p>
+                                    <div class="gallery-meta">
+                                        <span><i class="fas fa-camera"></i> Canon R5</span>
+                                        <span><i class="fas fa-eye"></i> f/11</span>
+                                        <span><i class="fas fa-clock"></i> 1/30s</span>
+                                    </div>
+                                </div>
+                                <div class="gallery-actions">
+                                    <button class="action-btn view-btn" data-image="https://images.unsplash.com/photo-1602426973528-040a2abb486c?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fG1vdW50YWluJTIwc3VucmlzZXxlbnwwfHwwfHx8MA%3D%3D">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                    <button class="action-btn like-btn">
+                                        <i class="fas fa-heart"></i>
+                                    </button>
+                                    <button class="action-btn share-btn">
+                                        <i class="fas fa-share"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="street">
+                        <div class="gallery-image">
+                            <img src="https://plus.unsplash.com/premium_photo-1661665434137-abae2c24c52f?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2l0eSUyMGxpZmV8ZW58MHx8MHx8fDA%3D" alt="Street Photography">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Urban Life</h3>
+                                    <p>Street Photography Collection</p>
+                                    <div class="gallery-meta">
+                                        <span><i class="fas fa-camera"></i> Fuji X-T4</span>
+                                        <span><i class="fas fa-eye"></i> f/5.6</span>
+                                        <span><i class="fas fa-clock"></i> 1/125s</span>
+                                    </div>
+                                </div>
+                                <div class="gallery-actions">
+                                    <button class="action-btn view-btn" data-image="https://plus.unsplash.com/premium_photo-1661665434137-abae2c24c52f?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2l0eSUyMGxpZmV8ZW58MHx8MHx8fDA%3D">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                    <button class="action-btn like-btn">
+                                        <i class="fas fa-heart"></i>
+                                    </button>
+                                    <button class="action-btn share-btn">
+                                        <i class="fas fa-share"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="portrait">
+                        <div class="gallery-image">
+                            <img src="https://bidunart.com/wp-content/uploads/2019/12/FashionModel286a-1024x683.jpg" alt="Fashion Portrait">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Fashion Portrait</h3>
+                                    <p>Creative Studio Session</p>
+                                    <div class="gallery-meta">
+                                        <span><i class="fas fa-camera"></i> Canon 5D Mark IV</span>
+                                        <span><i class="fas fa-eye"></i> f/1.8</span>
+                                        <span><i class="fas fa-clock"></i> 1/200s</span>
+                                    </div>
+                                </div>
+                                <div class="gallery-actions">
+                                    <button class="action-btn view-btn" data-image="https://bidunart.com/wp-content/uploads/2019/12/FashionModel286a-1024x683.jpg">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                    <button class="action-btn like-btn">
+                                        <i class="fas fa-heart"></i>
+                                    </button>
+                                    <button class="action-btn share-btn">
+                                        <i class="fas fa-share"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="wedding">
+                        <div class="gallery-image">
+                            <img src="https://images.squarespace-cdn.com/content/v1/56a5530976d99c632689ad7a/1776219a-e29c-415d-9621-e8840efb7f22/JWP-9268+%281%29.jpg" alt="Wedding Reception">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Wedding Reception</h3>
+                                    <p>First Dance Moment</p>
+                                    <div class="gallery-meta">
+                                        <span><i class="fas fa-camera"></i> Nikon D850</span>
+                                        <span><i class="fas fa-eye"></i> f/2.8</span>
+                                        <span><i class="fas fa-clock"></i> 1/160s</span>
+                                    </div>
+                                </div>
+                                <div class="gallery-actions">
+                                    <button class="action-btn view-btn" data-image="https://images.squarespace-cdn.com/content/v1/56a5530976d99c632689ad7a/1776219a-e29c-415d-9621-e8840efb7f22/JWP-9268+%281%29.jpg">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                    <button class="action-btn like-btn">
+                                        <i class="fas fa-heart"></i>
+                                    </button>
+                                    <button class="action-btn share-btn">
+                                        <i class="fas fa-share"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="commercial">
+                        <div class="gallery-image">
+                            <img src="https://images.squarespace-cdn.com/content/v1/5013f4b2c4aaa4752ac69b17/4e87ebe9-14c5-445e-830d-6c3010704a70/The+Louvre.jpg" alt="Architecture Photography">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Architecture</h3>
+                                    <p>Modern Building Design</p>
+                                    <div class="gallery-meta">
+                                        <span><i class="fas fa-camera"></i> Sony A7R IV</span>
+                                        <span><i class="fas fa-eye"></i> f/8</span>
+                                        <span><i class="fas fa-clock"></i> 1/125s</span>
+                                    </div>
+                                </div>
+                                <div class="gallery-actions">
+                                    <button class="action-btn view-btn" data-image="https://images.squarespace-cdn.com/content/v1/5013f4b2c4aaa4752ac69b17/4e87ebe9-14c5-445e-830d-6c3010704a70/The+Louvre.jpg">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                    <button class="action-btn like-btn">
+                                        <i class="fas fa-heart"></i>
+                                    </button>
+                                    <button class="action-btn share-btn">
+                                        <i class="fas fa-share"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item large" data-category="landscape">
+                        <div class="gallery-image">
+                            <img src="https://images.pexels.com/photos/18968280/pexels-photo-18968280/free-photo-of-beautiful-sunset-over-ocean-shore.jpeg" alt="Ocean Sunset">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Ocean Sunset</h3>
+                                    <p>Seascape Photography</p>
+                                    <div class="gallery-meta">
+                                        <span><i class="fas fa-camera"></i> Canon R5</span>
+                                        <span><i class="fas fa-eye"></i> f/16</span>
+                                        <span><i class="fas fa-clock"></i> 1/15s</span>
+                                    </div>
+                                </div>
+                                <div class="gallery-actions">
+                                    <button class="action-btn view-btn" data-image="https://images.pexels.com/photos/18968280/pexels-photo-18968280/free-photo-of-beautiful-sunset-over-ocean-shore.jpeg">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                    <button class="action-btn like-btn">
+                                        <i class="fas fa-heart"></i>
+                                    </button>
+                                    <button class="action-btn share-btn">
+                                        <i class="fas fa-share"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="street">
+                        <div class="gallery-image">
+                            <img src="https://images.pexels.com/photos/16959678/pexels-photo-16959678/free-photo-of-night-street-in-asian-city.jpeg" alt="City Night">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>City Nights</h3>
+                                    <p>Urban Photography</p>
+                                    <div class="gallery-meta">
+                                        <span><i class="fas fa-camera"></i> Fuji X-T4</span>
+                                        <span><i class="fas fa-eye"></i> f/4</span>
+                                        <span><i class="fas fa-clock"></i> 1/60s</span>
+                                    </div>
+                                </div>
+                                <div class="gallery-actions">
+                                    <button class="action-btn view-btn" data-image="https://images.pexels.com/photos/16959678/pexels-photo-16959678/free-photo-of-night-street-in-asian-city.jpeg">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                    <button class="action-btn like-btn">
+                                        <i class="fas fa-heart"></i>
+                                    </button>
+                                    <button class="action-btn share-btn">
+                                        <i class="fas fa-share"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="load-more-container">
+                    <button class="btn btn-outline load-more-btn">Load More Images</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio-stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="500">0</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="150">0</span>
+                        <span class="stat-label">Happy Clients</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="50">0</span>
+                        <span class="stat-label">Awards Won</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="8">0</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>Like what you see?</h2>
+                <p>Let's create something amazing together</p>
+                <a href="contact.html" class="btn btn-primary">Start Your Project</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Image Lightbox Modal -->
+    <div class="lightbox-modal" id="lightboxModal">
+        <div class="lightbox-overlay"></div>
+        <div class="lightbox-container">
+            <button class="lightbox-close"><i class="fas fa-times"></i></button>
+            <div class="lightbox-content">
+                <img src="/placeholder.svg" alt="" id="lightboxImage">
+                <div class="lightbox-info">
+                    <h3 id="lightboxTitle"></h3>
+                    <p id="lightboxDescription"></p>
+                    <div class="lightbox-meta" id="lightboxMeta"></div>
+                </div>
+            </div>
+            <div class="lightbox-nav">
+                <button class="lightbox-prev"><i class="fas fa-arrow-left"></i></button>
+                <button class="lightbox-next"><i class="fas fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="index.html">LENS<span>MASTER</span></a>
+            </div>
+            <div class="footer-links">
+                <div class="footer-nav">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-flickr"></i></a>
+                        <a href="#"><i class="fab fa-behance"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <p>hello@lensmaster.com</p>
+                    <p>+1 (555) 123-4567</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 LensMaster. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/portfolio.js"></script>
+    <script src="js/functionality.js"></script>
+    <script src="js/navbar.js"></script>
+</body>
+</html>

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LENS MASTER | Professional Photographer & Photo Editor</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/navbar.css">
+</head>
+<body>
+    <div class="noise-overlay"></div>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    
+    <div class="loading-screen">
+        <div class="loader">
+            <div class="camera-icon">
+                <i class="fas fa-camera"></i>
+            </div>
+            <span class="loader-text">LENS MASTER</span>
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <nav class="main-nav">
+        <div class="logo">
+            <a href="index.html">LENS<span>MASTER</span></a>
+        </div>
+        <div class="menu-toggle">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="nav-overlay">
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-footer">
+                <div class="nav-social">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-flickr"></i></a>
+                    <a href="#"><i class="fab fa-behance"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <!-- <div class="floating-text-container" id="floatingTextContainer">
+                    
+                </div> -->
+                
+                <div class="hero-text">
+                    <h1 class="main-title">
+                        <span class="title-line">CAPTURING</span>
+                        <span class="title-line">MOMENTS</span>
+                        <span class="title-line">IN TIME</span>
+                    </h1>
+                    <p class="hero-subtitle">Professional Photography & Photo Editing</p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="500">0</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="8">0</span>
+                            <span class="stat-label">Years</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="50">0</span>
+                            <span class="stat-label">Awards</span>
+                        </div>
+                    </div>
+                    <div class="hero-cta">
+                        <a href="portfolio.html" class="btn btn-primary">View Portfolio</a>
+                        <a href="contact.html" class="btn btn-secondary">Hire Me</a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="camera-3d-container">
+                        <model-viewer src="./models/camera/unnamed_camera_photographie.glb" id="model" autoplay camera-controls></model-viewer>
+                        <!-- <main>
+                            <div id="container3D"></div>
+                        </main> -->
+                    </div>
+                    
+                    <!-- <div class="floating-elements">
+                        <div class="photo-frame frame-1">
+                            <img src="https://images.unsplash.com/photo-1746207068099-4b3a1dfe5fbf?q=80&w=2384&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Photography sample">
+                        </div>
+                        <div class="photo-frame frame-2">
+                            <img src="https://images.unsplash.com/photo-1714629825960-75fd2154d700?q=80&w=3760&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Photography sample">
+                        </div>
+                        <div class="photo-frame frame-3">
+                            <img src="https://images.unsplash.com/photo-1734603549513-6e1c688629cf?q=80&w=3200&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Photography sample">
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            
+            <div class="scroll-indicator">
+                <div class="scroll-text">Scroll</div>
+                <div class="scroll-line"></div>
+            </div>
+        </section>
+
+        <section class="services-section">
+            <div class="section-header">
+                <h2 class="section-title">SERVICES</h2>
+                <p class="section-subtitle">What I offer to bring your vision to life</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3>Portrait Photography</h3>
+                    <p>Professional portrait sessions that capture personality and emotion with perfect lighting and composition.</p>
+                    <div class="service-price">From $200</div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Wedding Photography</h3>
+                    <p>Documenting your special day with artistic vision and attention to every precious moment.</p>
+                    <div class="service-price">From $1500</div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Commercial Photography</h3>
+                    <p>High-quality commercial and product photography for businesses and marketing campaigns.</p>
+                    <div class="service-price">From $500</div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-edit"></i>
+                    </div>
+                    <h3>Photo Editing</h3>
+                    <p>Professional photo retouching and editing services to enhance and perfect your images.</p>
+                    <div class="service-price">From $50</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio-preview">
+            <div class="section-header">
+                <h2 class="section-title">FEATURED WORK</h2>
+                <p class="section-subtitle">A glimpse into my recent projects</p>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="portrait">
+                    <div class="portfolio-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ69pGtRYgF6wfRznFqzUflQ79Tkvgy0QMtTw&s" alt="Portrait Photography">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Portrait Session</h3>
+                                <p>Professional Headshots</p>
+                                <a href="portfolio.html" class="portfolio-link">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="wedding">
+                    <div class="portfolio-image">
+                        <img src="https://www.eivans.com/wp-content/uploads/2023/08/Eivans-2-1.jpg" alt="Wedding Photography">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Wedding Day</h3>
+                                <p>Sarah & Michael</p>
+                                <a href="portfolio.html" class="portfolio-link">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="commercial">
+                    <div class="portfolio-image">
+                        <img src="https://cdn-bjpdk.nitrocdn.com/dyjDRTumiVVFLKEpXMADzKdEUUbypNrL/assets/images/optimized/rev-c641c5a/visualeducation.com/wp-content/uploads/2019/07/Clinique_Advert_Karl_Taylor.jpg" alt="Commercial Photography">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Product Shoot</h3>
+                                <p>Fashion Brand</p>
+                                <a href="portfolio.html" class="portfolio-link">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="landscape">
+                    <div class="portfolio-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSanjSqwfjzt6rQ2zEO9EasIXrkqk2wqtPmw&s" alt="Landscape Photography">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Nature Series</h3>
+                                <p>Mountain Landscapes</p>
+                                <a href="portfolio.html" class="portfolio-link">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="portfolio-cta">
+                <a href="portfolio.html" class="btn btn-outline">View Full Portfolio</a>
+            </div>
+        </section>
+
+        <section class="testimonials-section">
+            <div class="section-header">
+                <h2 class="section-title">CLIENT TESTIMONIALS</h2>
+                <p class="section-subtitle">What clients say about my work</p>
+            </div>
+            
+            <div class="testimonials-container">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">"</div>
+                        <p>Absolutely stunning work! The attention to detail and artistic vision exceeded all our expectations. Our wedding photos are pure magic.</p>
+                        <div class="client-info">
+                            <h4>Sarah Johnson</h4>
+                            <span>Bride</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">"</div>
+                        <p>Professional, creative, and incredibly talented. The commercial shoot for our brand was executed flawlessly.</p>
+                        <div class="client-info">
+                            <h4>Mark Thompson</h4>
+                            <span>Creative Director</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">"</div>
+                        <p>The photo editing services transformed our images beyond recognition. Truly exceptional quality and fast turnaround.</p>
+                        <div class="client-info">
+                            <h4>Lisa Chen</h4>
+                            <span>Fashion Designer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>Ready to capture your story?</h2>
+                <p>Let's create something beautiful together</p>
+                <a href="contact.html" class="btn btn-primary">Get In Touch</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="index.html">LENS<span>MASTER</span></a>
+            </div>
+            <div class="footer-links">
+                <div class="footer-nav">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-flickr"></i></a>
+                        <a href="#"><i class="fab fa-behance"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <p>hello@lensmaster.com</p>
+                    <p>+1 (555) 123-4567</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 LensMaster. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/functionality.js"></script>
+    <script src="js/navbar.js"></script>
+</body>
+</html>

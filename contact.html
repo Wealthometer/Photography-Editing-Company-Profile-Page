@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | LENS MASTER</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="contact-page">
+    <div class="noise-overlay"></div>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    
+    <div class="loading-screen">
+        <div class="loader">
+            <div class="camera-icon">
+                <i class="fas fa-camera"></i>
+            </div>
+            <span class="loader-text">CONTACT</span>
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <nav class="main-nav">
+        <div class="logo">
+            <a href="index.html">LENS<span>MASTER</span></a>
+        </div>
+        <div class="menu-toggle">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="nav-overlay">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="nav-footer">
+                <div class="nav-social">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-flickr"></i></a>
+                    <a href="#"><i class="fab fa-behance"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <div class="header-content">
+                <h1 class="page-title">
+                    <span class="title-line">GET IN</span>
+                    <span class="title-line">TOUCH</span>
+                </h1>
+                <p class="page-subtitle">Let's discuss your photography needs</p>
+            </div>
+        </section>
+
+        <section class="contact-main">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-intro">
+                            <h2>Let's Create Something Beautiful</h2>
+                            <p>I'm always excited to work on new projects and collaborate with amazing people. Whether you need professional photography services or have questions about my work, I'd love to hear from you.</p>
+                        </div>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h3>Email</h3>
+                                    <p>hello@lensmaster.com</p>
+                                    <a href="mailto:hello@lensmaster.com">Send Email</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h3>Phone</h3>
+                                    <p>+1 (555) 123-4567</p>
+                                    <a href="tel:+15551234567">Call Now</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h3>Location</h3>
+                                    <p>Los Angeles, California</p>
+                                    <a href="#map">View Map</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h3>Availability</h3>
+                                    <p>Mon - Fri: 9AM - 6PM</p>
+                                    <p>Weekends: By Appointment</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links">
+                            <h3>Follow My Work</h3>
+                            <div class="social-grid">
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-instagram"></i>
+                                    <span>Instagram</span>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-flickr"></i>
+                                    <span>Flickr</span>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-behance"></i>
+                                    <span>Behance</span>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-linkedin-in"></i>
+                                    <span>LinkedIn</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-container">
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-header">
+                                <h2>Send Me a Message</h2>
+                                <p>Fill out the form below and I'll get back to you within 24 hours.</p>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="text" id="firstName" name="firstName" required>
+                                    <label for="firstName">First Name</label>
+                                    <div class="form-line"></div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="lastName" name="lastName" required>
+                                    <label for="lastName">Last Name</label>
+                                    <div class="form-line"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" required>
+                                <label for="email">Email Address</label>
+                                <div class="form-line"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <input type="tel" id="phone" name="phone">
+                                <label for="phone">Phone Number (Optional)</label>
+                                <div class="form-line"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <select id="service" name="service" required>
+                                    <option value="">Select a Service</option>
+                                    <option value="portrait">Portrait Photography</option>
+                                    <option value="wedding">Wedding Photography</option>
+                                    <option value="commercial">Commercial Photography</option>
+                                    <option value="event">Event Photography</option>
+                                    <option value="editing">Photo Editing</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <label for="service">Service Type</label>
+                                <div class="form-line"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <input type="date" id="eventDate" name="eventDate">
+                                <label for="eventDate">Event Date (If Applicable)</label>
+                                <div class="form-line"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <select id="budget" name="budget">
+                                    <option value="">Select Budget Range</option>
+                                    <option value="under-500">Under $500</option>
+                                    <option value="500-1000">$500 - $1,000</option>
+                                    <option value="1000-2500">$1,000 - $2,500</option>
+                                    <option value="2500-5000">$2,500 - $5,000</option>
+                                    <option value="over-5000">Over $5,000</option>
+                                </select>
+                                <label for="budget">Budget Range</label>
+                                <div class="form-line"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                                <label for="message">Tell me about your project</label>
+                                <div class="form-line"></div>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <label for="newsletter">Subscribe to my newsletter for photography tips and updates</label>
+                            </div>
+                            
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary submit-btn">
+                                    <span class="btn-text">Send Message</span>
+                                    <span class="btn-loading">
+                                        <i class="fas fa-spinner fa-spin"></i>
+                                        Sending...
+                                    </span>
+                                </button>
+                            </div>
+                        </form>
+                        
+                        <div class="form-success" id="formSuccess">
+                            <div class="success-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <h3>Message Sent Successfully!</h3>
+                            <p>Thank you for reaching out. I'll get back to you within 24 hours.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-section" id="map">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">FIND ME</h2>
+                    <p class="section-subtitle">Located in the heart of Los Angeles</p>
+                </div>
+                
+                <div class="map-container">
+                    <div class="map-placeholder">
+                       <section class="map-section">
+                            <h2 class="section-title reveal-text">Find Us</h2>
+                            <div class="map-container1 reveal-element">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3008.1858177280824!2d-73.7198007!3d41.0365813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2964c7a11b665%3A0x7eb7cc03acc1ecd9!2sPepsiCo!5e0!3m2!1sen!2sus!4v1651234567890!5m2!1sen!2sus" width="100%" height="500px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </section>
+                        <div class="map-overlay">
+                            <div class="map-pin">
+                                <i class="fas fa-map-pin"></i>
+                            </div>
+                            <div class="map-info">
+                                <h3>Studio Location</h3>
+                                <p>Downtown Los Angeles</p>
+                                <p>Available by appointment</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">FREQUENTLY ASKED</h2>
+                    <p class="section-subtitle">Common questions about my services</p>
+                </div>
+                
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How far in advance should I book?</h3>
+                            <div class="faq-icon">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="faq-answer">
+                            <p>For weddings and major events, I recommend booking 6-12 months in advance. For portrait sessions and smaller projects, 2-4 weeks notice is usually sufficient. However, I sometimes have last-minute availability, so don't hesitate to reach out even if your event is coming up soon.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What's included in your packages?</h3>
+                            <div class="faq-icon">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="faq-answer">
+                            <p>All packages include professional photography, basic editing, and an online gallery for viewing and downloading. Specific inclusions vary by package type - wedding packages include engagement sessions, while portrait packages include wardrobe consultation. Detailed package information is available on my services page.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Do you travel for shoots?</h3>
+                            <div class="faq-icon">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes! I love traveling for photography projects. I cover the entire Los Angeles area at no extra charge. For destinations outside LA, travel fees may apply depending on the location and duration. I'm always excited to explore new places and capture beautiful moments wherever they may be.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How long until I receive my photos?</h3>
+                            <div class="faq-icon">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Turnaround times vary by project type. Portrait sessions are typically delivered within 1-2 weeks, while wedding galleries are ready in 4-6 weeks. For commercial projects, delivery time depends on the scope and editing requirements. I always provide a specific timeline during our initial consultation.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Can I request specific editing styles?</h3>
+                            <div class="faq-icon">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="faq-answer">
+                            <p>While I have my signature editing style, I'm happy to adapt to your preferences. During our consultation, we can discuss your vision and look at examples of styles you like. I want to ensure the final images perfectly match your expectations and aesthetic preferences.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What happens if weather affects our outdoor shoot?</h3>
+                            <div class="faq-icon">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="faq-answer">
+                            <p>I always monitor weather conditions closely and will communicate with you about any concerns. For light rain, we can often work with umbrellas or find covered areas. For severe weather, we'll reschedule at no additional cost. I also have backup indoor location options and studio space available when needed.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>Ready to capture your story?</h2>
+                <p>Let's create something beautiful together</p>
+                <a href="#contactForm" class="btn btn-primary">Start Your Project</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="index.html">LENS<span>MASTER</span></a>
+            </div>
+            <div class="footer-links">
+                <div class="footer-nav">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-flickr"></i></a>
+                        <a href="#"><i class="fab fa-behance"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <p>hello@lensmaster.com</p>
+                    <p>+1 (555) 123-4567</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 LensMaster. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/functionality.js"></script>
+    
+</body>
+</html>
